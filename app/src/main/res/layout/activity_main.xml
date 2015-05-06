@@ -1,45 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:facebook="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/clouds"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:padding="20dp" >
-
-    <com.facebook.widget.LoginButton
-        android:id="@+id/fb_login_button"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        facebook:confirm_logout="false"
-        facebook:fetch_user_info="true" />
+    android:padding="20dp">
 
     <TextView
-        android:id="@+id/user_name"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:textSize="18sp" />
+        android:layout_gravity="center_horizontal"
+        android:text="Sign Up"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/asbestos" />
 
     <Button
-        android:id="@+id/user_profile_btn"
+        android:id="@+id/btnFacebook"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="User Profile"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_facebook"
+        android:fontFamily="Helvetica"
+        android:text="Activity Facebook"
+        android:textColor="#ffffff" />
 
     <Button
-        android:id="@+id/update_status"
+        android:id="@+id/btnGoogle"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/update_status" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_google"
+        android:fontFamily="Roboto"
+        android:text="Activity Google+"
+        android:textColor="#ffffff" />
 
-    <GridLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </GridLayout>
 
 </LinearLayout>

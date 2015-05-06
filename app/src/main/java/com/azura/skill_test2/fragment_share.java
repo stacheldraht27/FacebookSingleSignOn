@@ -20,6 +20,10 @@ public class fragment_share extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
+    public fragment_share() {
+        // Required empty public constructor
+    }
+
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -38,10 +42,6 @@ public class fragment_share extends Fragment {
         return fragment;
     }
 
-    public fragment_share() {
-        // Required empty public constructor
-    }
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +55,7 @@ public class fragment_share extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_fragment_share, container, false);
+        View view = inflater.inflate(R.layout.fragment_share, container, false);
 
         return view;
     }
@@ -105,7 +105,7 @@ public class fragment_share extends Fragment {
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        void onFragmentInteraction(Uri uri);
     }
 
 }

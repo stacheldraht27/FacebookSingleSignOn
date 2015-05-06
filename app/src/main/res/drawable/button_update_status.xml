@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:angle="270" android:endColor="@color/pomegranate" android:startColor="@color/pomegranate" />
+            <corners android:radius="0dp" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+
+    <item android:state_focused="true">
+        <shape>
+            <gradient android:angle="270" android:endColor="@color/pomegranate" android:startColor="@color/pomegranate" />
+            <stroke android:width="3dp" android:color="@color/midnight_blue" />
+            <corners android:radius="0dp" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:angle="270" android:endColor="@color/silver" android:startColor="@color/silver" />
+            <!--<stroke-->
+            <!--android:width="3dp"-->
+            <!--android:color="@color/midnight_blue" />-->
+            <corners android:radius="0dp" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape>
+            <gradient android:angle="270" android:endColor="@color/alizarin" android:startColor="@color/alizarin" />
+            <!--<stroke-->
+            <!--android:width="3dp"-->
+            <!--android:color="@color/midnight_blue" />-->
+            <corners android:radius="0dp" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <gradient android:angle="270" android:endColor="@color/silver" android:startColor="@color/silver" />
+            <corners android:radius="0dp" />
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape>
+    </item>
+</selector>
